@@ -5,8 +5,8 @@ from starlette.background import BackgroundTasks
 
 app = FastAPI()
 
-VERIFY_TOKEN = os.getenv("VERIFY_TOKEN", "change-me")
-PAGE_ACCESS_TOKEN = os.getenv("PAGE_ACCESS_TOKEN", "PASTE_LATER")
+VERIFY_TOKEN = os.getenv("VERIFY_TOKEN", "my-super-secret-verify")
+PAGE_ACCESS_TOKEN = os.getenv("PAGE_ACCESS_TOKEN", "7c0fa9617d69dfe13b10936ece41f998")
 
 FB_SEND_URL = "https://graph.facebook.com/v18.0/me/messages"
 
